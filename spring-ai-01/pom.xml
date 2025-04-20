@@ -6,11 +6,8 @@
         <artifactId>spring-ai-test</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-
     <artifactId>spring-ai-01</artifactId>
     <packaging>jar</packaging>
-
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -51,10 +48,6 @@
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi3-spring-boot-starter</artifactId>
         </dependency>
         <!-- spring boot monitoring -->
         <dependency>

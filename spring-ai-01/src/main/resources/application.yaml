@@ -44,13 +44,3 @@ management:
     metrics:
       export:
         enabled: true
-
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    tags-sorter: alpha
-    operations-sorter: alpha
-    show-extensions: true
-  api-docs:
-    path: /v3/api-docs
-  default-flat-param-object: true

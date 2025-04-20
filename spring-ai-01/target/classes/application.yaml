@@ -54,3 +54,8 @@ springdoc:
   api-docs:
     path: /v3/api-docs
   default-flat-param-object: true
+knife4j:
+  enable: true
+  setting:
+    language: EN
+    swagger-model-name: Response Entities
