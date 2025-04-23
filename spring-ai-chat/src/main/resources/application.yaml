@@ -23,9 +23,12 @@ spring:
       base-url: https://api.deepseek.com
       chat:
         options:
-          model: deepseek-reasoner  # 调用的哪个模型名称
+          model: deepseek-chat #deepseek-reasoner  # 调用的哪个模型名称
       embedding:
         enabled: false
+#deepseek-chat（V3）：适用于聊天机器人、智能客服、内容生成等，能够理解和生成日常对话内容。
+#deepseek-reasoner（R1）：专为复杂推理任务设计，适合解决需要深度逻辑分析和推理的问题。
+
 
 management:
   metrics:
