@@ -1,0 +1,11 @@
+spring:
+  rsocket:
+    server:
+      port: 7000
+      transport: websocket
+      mapping-path: /rsocket
+  application:
+    name: chat-app
+
+server:
+  port: 8090

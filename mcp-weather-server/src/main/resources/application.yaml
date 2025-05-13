@@ -11,3 +11,4 @@ spring:
     mcp:
       server:
         type: ASYNC
+        sse-message-endpoint: /mcp/messages

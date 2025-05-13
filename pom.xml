@@ -13,6 +13,9 @@
         <module>mcp-based-sse</module>
         <module>mcp-weather-server</module>
         <module>mcp-weather-client</module>
+        <module>spring-disruptor</module>
+        <module>spring-rsocket</module>
+        <module>spring-demo</module>
     </modules>
     <packaging>pom</packaging>
 

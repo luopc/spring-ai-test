@@ -8,13 +8,11 @@ import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.Map;
 import java.util.Objects;
 
 @Slf4j
@@ -24,16 +22,6 @@ public class WeatherService {
     private static final String API_URL = "https://cn.apihz.cn/api/tianqi/tqyb.php";
     private final OkHttpClient client = new OkHttpClient();
 
-    @Tool(description = "根据省份+城市名称获取天气预报")
-    public String getWeatherByCity(String province, String city) {
-//        Map<String, String> mockData = Map.of(
-//                "西安", "晴天",
-//                "北京", "小雨",
-//                "上海", "大雨"
-//        );
-        WeatherResponse weather = getWeather(province, city);
-        return Objects.nonNull(weather) ? weather.toString() : "抱歉：未查询到对应城市！";
-    }
 
     public WeatherResponse getWeather(String province, String city) {
         // 构建请求URL（注意URL编码）
@@ -43,12 +31,10 @@ public class WeatherService {
                 .addQueryParameter("sheng", URLEncoder.encode(province, StandardCharsets.UTF_8))
                 .addQueryParameter("place", URLEncoder.encode(city, StandardCharsets.UTF_8))
                 .build();
-
         Request request = new Request.Builder()
                 .url(url)
                 .get()
                 .build();
-
         try (Response response = client.newCall(request).execute()) {
             if (!response.isSuccessful()) {
                 log.error("Unexpected code: {}", response);
@@ -57,7 +43,7 @@ public class WeatherService {
             String bodyResult = response.body().string();
             log.info("Response: {}", bodyResult);
             ObjectMapper mapper = new ObjectMapper();
-            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES,false);
+            mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             return mapper.readValue(bodyResult, WeatherResponse.class);
         } catch (IOException e) {
             log.error("Unexpected error: ", e);
