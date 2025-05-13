@@ -14,10 +14,6 @@ public class StaticConfigVerifier implements TradeEventVerifier {
 
     private final ClientService clientService;
 
-    @Override
-    public VerificationType getType() {
-        return VerificationType.CONTRACT_CHECK;
-    }
 
     @Override
     public VerificationResult verify(TradeEvent trade) {
@@ -25,9 +21,9 @@ public class StaticConfigVerifier implements TradeEventVerifier {
 
         // 使用伪造数据时的模拟逻辑
         if (!clientInfo.getAllowedTypes().contains(trade.getTradeType())) {
-            return VerificationResult.fail("Trade type not allowed");
+            return VerificationResult.fail(trade.getTradeId(), "Trade type not allowed");
         }
 
-        return VerificationResult.pass();
+        return VerificationResult.pass(trade.getTradeId());
     }
 }

@@ -1,16 +1,16 @@
 package com.luopc.platform.cloud.service.subscriber;
 
 import com.luopc.platform.cloud.service.mode.TradeEvent;
-import com.luopc.platform.cloud.service.service.VerificationEngineService;
+import com.luopc.platform.cloud.service.service.VerificationEngine;
 import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
-public class ClientRetryHandler {
+public class ClientUpdateEventHandler {
 
-    private final VerificationEngineService verificationEngine;
+    private final VerificationEngine verificationEngine;
 
     public void handleContractUpdate(String clientId) {
         List<TradeEvent> affectedTrades = findAffectedTrades(clientId);

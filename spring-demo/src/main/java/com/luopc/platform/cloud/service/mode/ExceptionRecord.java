@@ -4,4 +4,7 @@ import lombok.Data;
 
 @Data
 public class ExceptionRecord {
+
+    private String tradeId;
+    private String exceptionMessage;
 }

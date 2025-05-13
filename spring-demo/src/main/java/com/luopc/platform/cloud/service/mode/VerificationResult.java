@@ -9,15 +9,23 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class VerificationResult {
 
-    private boolean passed;
+    private String tradeId;
+    private VerificationStatus status;
     private String reason;
 
-    public static VerificationResult pass() {
-        return new VerificationResult(true, "Passed");
+    public static VerificationResult pass(String tradeId) {
+        return new VerificationResult(tradeId, VerificationStatus.PASSED, "Passed");
     }
 
-    public static VerificationResult fail(String reason) {
-        return new VerificationResult(false, reason);
+    public static VerificationResult fail(String tradeId, String reason) {
+        return new VerificationResult(tradeId, VerificationStatus.EXCEPTION, reason);
     }
 
+    public static VerificationResult hold(String tradeId) {
+        return new VerificationResult(tradeId, VerificationStatus.ON_HOLD, "");
+    }
+
+    public boolean isPass(){
+        return status == VerificationStatus.PASSED;
+    }
 }

@@ -5,7 +5,7 @@ public enum VerificationStatus {
     NEW,
     IN_PROGRESS,
     ON_HOLD,
-    VERIFIED,
+    PASSED,
     EXCEPTION
 
 }
