@@ -14,7 +14,7 @@ public class AppConfig {
     public ChatClient chatClient(ChatModel chatModel, ToolCallbackProvider tools) {
         return ChatClient
                 .builder(chatModel)
-                .defaultTools(tools.getToolCallbacks())
+                .defaultToolCallbacks(tools.getToolCallbacks())
                 .build();
     }
 }

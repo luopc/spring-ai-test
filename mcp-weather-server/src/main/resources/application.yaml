@@ -12,3 +12,4 @@ spring:
       server:
         type: ASYNC
         sse-message-endpoint: /mcp/messages
+        enabled: true

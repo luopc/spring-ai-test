@@ -24,6 +24,7 @@ public class WeatherService {
 
 
     public WeatherResponse getWeather(String province, String city) {
+        log.info("Province: {}, City: {}", province, city);
         // 构建请求URL（注意URL编码）
         HttpUrl url = Objects.requireNonNull(HttpUrl.parse(API_URL)).newBuilder()
                 .addQueryParameter("id", "88888888") // 替换实际ID

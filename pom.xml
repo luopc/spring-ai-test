@@ -9,13 +9,10 @@
     <name>AI-service</name>
     <description>AI Services</description>
     <modules>
-        <module>spring-ai-chat</module>
-        <module>mcp-based-sse</module>
         <module>mcp-weather-server</module>
         <module>mcp-weather-client</module>
-        <module>spring-disruptor</module>
-        <module>spring-rsocket</module>
-        <module>spring-demo</module>
+        <module>langchain4j-demo</module>
+        <module>common</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -23,8 +20,9 @@
         <!-- SpringCloud版本号: https://start.spring.io/actuator/info -->
         <spring.boot.version>3.4.4</spring.boot.version>
         <spring.cloud.version>2024.0.1</spring.cloud.version>
-        <spring.ai.version>1.0.0-M7</spring.ai.version>
-        <knife4j.version>4.4.0</knife4j.version>
+        <spring.ai.version>1.0.0</spring.ai.version>
+        <mcp.version>0.10.0</mcp.version>
+        <langchain4j.version>1.0.0-beta3</langchain4j.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -32,6 +30,15 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.32</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <!-- 依赖声明 -->
     <dependencyManagement>
@@ -52,31 +59,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring-doc swagger -->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-dependencies</artifactId>
-                <version>${knife4j.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents.client5</groupId>
-                <artifactId>httpclient5</artifactId>
-                <version>${httpclient5.version}</version>
-            </dependency>
-            <!--本地缓存框架-->
-            <dependency>
-                <groupId>com.github.ben-manes.caffeine</groupId>
-                <artifactId>caffeine</artifactId>
-                <version>${caffeine.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.32</version>
-                <scope>provided</scope>
-            </dependency>
             <!--spring AI-->
             <dependency>
                 <groupId>org.springframework.ai</groupId>
@@ -88,7 +70,14 @@
             <dependency>
                 <groupId>io.modelcontextprotocol.sdk</groupId>
                 <artifactId>mcp-bom</artifactId>
-                <version>0.8.1</version>
+                <version>${mcp.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>dev.langchain4j</groupId>
+                <artifactId>langchain4j-bom</artifactId>
+                <version>${langchain4j.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -101,7 +90,7 @@
         <developerConnection>scm:git:https://gitee.com/luo_pc/spring-ai-test.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
-    <!--
+    <!-- -->
     <repositories>
         <repository>
             <name>Central Portal Snapshots</name>
@@ -131,5 +120,5 @@
             </releases>
         </repository>
     </repositories>
-    -->
+
 </project>

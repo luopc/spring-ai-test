@@ -30,8 +30,6 @@ spring:
       client:
         type: ASYNC
         request-timeout: 30s
-        toolcallback:
-          enabled: true
         sse:
           connections:
             mcp-server:
