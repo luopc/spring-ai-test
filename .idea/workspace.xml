@@ -4,145 +4,75 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4850d011-6108-423b-808e-44c543f163e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/Clause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/CompositeClause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/IndexSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/Pagination.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/SimpleClause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/TradeAttributes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/TradeIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/TradeQueryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/query/TradeQueryResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/service/CQEngineTradeIndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/service/SQLParserValueParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/service/TradeIndexService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/luopc/platform/cloud/service/ai/api/utils/PageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/luopc/platform/cloud/service/ai/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/luopc/platform/cloud/service/ai/api/service/CQEngineTradeIndexServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/test/java/com/luopc/platform/cloud/service/ai/api/utils/PageUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langchain4j-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langchain4j-demo/src/main/java/com/luopc/platform/cloud/service/ai/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langchain4j-demo/src/test/java/com/luopc/platform/cloud/service/ai/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/test/java/com/luopc/platform/cloud/service/ai/WeatherServerApplicationTest.java" afterDir="false" />
+    <list default="true" id="25a5c520-1ce9-4c4c-a72a-a7457b6ecf42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-token-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service/jwt/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service/jwt/handler/AuthenticationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/test/java/com/luopc/platform/cloud/service/jwt/JwtBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-prd.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-uat.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/src/main/java/com/luopc/platform/cloud/service/ai/SSEAppApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/src/main/java/com/luopc/platform/cloud/service/ai/config/BeanConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/src/main/java/com/luopc/platform/cloud/service/ai/service/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-based-sse/src/test/java/com/luopc/platform/cloud/service/ai/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-client/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-client/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/.env.development" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/.env.production" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/eslint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/main.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/pages/Chat/Chat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/pages/Chat/Chat.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/pages/Env.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/src/vite-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/chat-app/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/java/com/luopc/platform/cloud/web/ChatWithAIApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/java/com/luopc/platform/cloud/web/config/ChatBotConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/java/com/luopc/platform/cloud/web/controller/ChatController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/java/com/luopc/platform/cloud/web/model/convertor/DeepSeekModelOutputConvertor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/java/com/luopc/platform/cloud/web/service/ChatbotBeanService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/resources/application-dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/resources/application-prd.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/resources/application-uat.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-ai-chat/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/demo/ObserverDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/handler/TradeEventVerifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/handler/impl/PositionVerifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/handler/impl/StaticConfigVerifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/handler/impl/TradeFormatVerifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/CalculationResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/ClientInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/ExceptionRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/TradeEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/TradeVerification.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/VerificationResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/VerificationStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/mode/VerificationType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/service/ClientService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/service/TradeVerificationContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/service/VerificationEngine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/subscriber/CalculationResultReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/subscriber/ClientUpdateEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-demo/src/main/java/com/luopc/platform/cloud/service/subscriber/TradeReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/MainTestWithOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/MainWithParallel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/handler/TradeIdHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/handler/TradeInfoPrintHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/handler/TradeNameHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/handler/TradePriceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/publish/TradeEventTranslator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/publish/TradePublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-disruptor/src/main/java/com/luopc/platform/cloud/service/dis/types/Trade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/java/com/luopc/platform/cloud/web/RSocketChatApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/java/com/luopc/platform/cloud/web/config/RSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/java/com/luopc/platform/cloud/web/controller/ChatController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/java/com/luopc/platform/cloud/web/model/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/java/com/luopc/platform/cloud/web/service/RSocketChatService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rsocket/src/main/resources/application.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
-  <component name="ProjectId" id="2xMXkpFtNcnhTJremdVvAh4FGQu" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2xMrFsNrcL8xThX2HwAo1t7GFE6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.WeatherService.executor": "Run",
+    "Application.JwtBuilderTest.executor": "Run",
+    "JUnit.JwtBuilderTest.encryptToken.executor": "Run",
+    "JUnit.JwtBuilderTest.generateJwtToken.executor": "Run",
+    "JUnit.JwtBuilderTest.parseToken.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.WeatherClientApplication-dev.executor": "Run",
     "Spring Boot.WeatherClientApplication.executor": "Run",
+    "Spring Boot.WeatherServerApplication-dev.executor": "Run",
     "Spring Boot.WeatherServerApplication.executor": "Run",
+    "codeReviewSummary": "[]",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/workspace/java/AI/spring-ai-test/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service",
+    "last_opened_file_path": "D:/workspace/java/AI/spring-ai-test/mcp-weather-server/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,24 +80,27 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.32873562",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="Application" />
-      </set>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\java\AI\spring-ai-test\mcp-weather-server\src\main\resources" />
+      <recent name="D:\workspace\java\AI\spring-ai-test\mcp-weather-server\src\main\resources\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\java\AI\spring-ai-test\mcp-weather-server\src\main\resources\config" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.WeatherClientApplication">
-    <configuration name="WeatherService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luopc.platform.cloud.service.ai.service.WeatherService" />
-      <module name="mcp-weather-server" />
+  <component name="RunManager" selected="Spring Boot.WeatherClientApplication-dev">
+    <configuration name="JwtBuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.luopc.platform.cloud.service.jwt.JwtBuilderTest" />
+      <module name="jwt-token-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.luopc.platform.cloud.service.ai.service.*" />
+          <option name="PATTERN" value="com.luopc.platform.cloud.service.jwt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,7 +108,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="JwtBuilderTest.encryptToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jwt-token-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luopc.platform.cloud.service.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luopc.platform.cloud.service.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.luopc.platform.cloud.service.jwt.JwtBuilderTest" />
+      <option name="METHOD_NAME" value="encryptToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtBuilderTest.generateJwtToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jwt-token-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luopc.platform.cloud.service.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luopc.platform.cloud.service.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.luopc.platform.cloud.service.jwt.JwtBuilderTest" />
+      <option name="METHOD_NAME" value="generateJwtToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtBuilderTest.parseToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jwt-token-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.luopc.platform.cloud.service.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.luopc.platform.cloud.service.jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.luopc.platform.cloud.service.jwt.JwtBuilderTest" />
+      <option name="METHOD_NAME" value="parseToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherClientApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <envs>
         <env name="ai.token" value="sk-fbe29af0a85f4e6eb6be1fc4d87bdc60" />
       </envs>
@@ -185,44 +167,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="WeatherServerApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="dev" />
       <module name="mcp-weather-server" />
-      <selectedOptions>
-        <option name="environmentVariables" />
-      </selectedOptions>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.luopc.platform.cloud.service.ai.WeatherServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WeatherService" />
-      <item itemvalue="Spring Boot.WeatherClientApplication" />
-      <item itemvalue="Spring Boot.WeatherServerApplication" />
+      <item itemvalue="Application.JwtBuilderTest" />
+      <item itemvalue="JUnit.JwtBuilderTest.encryptToken" />
+      <item itemvalue="JUnit.JwtBuilderTest.generateJwtToken" />
+      <item itemvalue="JUnit.JwtBuilderTest.parseToken" />
+      <item itemvalue="Spring Boot.WeatherClientApplication-dev" />
+      <item itemvalue="Spring Boot.WeatherServerApplication-dev" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WeatherService" />
+        <item itemvalue="Application.JwtBuilderTest" />
+        <item itemvalue="JUnit.JwtBuilderTest.encryptToken" />
+        <item itemvalue="JUnit.JwtBuilderTest.parseToken" />
+        <item itemvalue="JUnit.JwtBuilderTest.generateJwtToken" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4850d011-6108-423b-808e-44c543f163e3" name="Changes" comment="" />
-      <created>1747749062151</created>
+      <changelist id="25a5c520-1ce9-4c4c-a72a-a7457b6ecf42" name="Changes" comment="" />
+      <created>1747758683302</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747749062151</updated>
-      <workItem from="1747749063498" duration="8338000" />
+      <updated>1747758683302</updated>
+      <workItem from="1747758684452" duration="3732000" />
+      <workItem from="1748679798252" duration="11104000" />
+      <workItem from="1748852593357" duration="586000" />
+      <workItem from="1749300450299" duration="590000" />
+      <workItem from="1749473242685" duration="584000" />
+      <workItem from="1749480932208" duration="3038000" />
+      <workItem from="1749650703874" duration="600000" />
+      <workItem from="1749653223365" duration="583000" />
+      <workItem from="1749654669128" duration="1273000" />
+      <workItem from="1749903749088" duration="4549000" />
+      <workItem from="1749981729644" duration="6291000" />
+      <workItem from="1755311465349" duration="1801000" />
+      <workItem from="1756478250195" duration="770000" />
+      <workItem from="1756480896460" duration="1158000" />
+      <workItem from="1756482550255" duration="759000" />
+      <workItem from="1756517895546" duration="36000" />
+      <workItem from="1756521813124" duration="672000" />
+      <workItem from="1756552435087" duration="623000" />
+      <workItem from="1756567758766" duration="628000" />
+      <workItem from="1757602877174" duration="2326000" />
+      <workItem from="1760170591163" duration="449000" />
+      <workItem from="1760972626629" duration="923000" />
     </task>
     <servers />
   </component>

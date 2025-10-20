@@ -13,20 +13,23 @@
         <module>mcp-weather-client</module>
         <module>langchain4j-demo</module>
         <module>common</module>
+        <module>jwt-token-demo</module>
     </modules>
     <packaging>pom</packaging>
 
     <properties>
         <!-- SpringCloud版本号: https://start.spring.io/actuator/info -->
-        <spring.boot.version>3.4.4</spring.boot.version>
-        <spring.cloud.version>2024.0.1</spring.cloud.version>
-        <spring.ai.version>1.0.0</spring.ai.version>
-        <mcp.version>0.10.0</mcp.version>
-        <langchain4j.version>1.0.0-beta3</langchain4j.version>
+        <spring.boot.version>3.5.0</spring.boot.version>
+        <spring.cloud.version>2025.0.0</spring.cloud.version>
+        <spring.ai.version>1.0.3</spring.ai.version>
+        <alibaba.ai.version>1.0.0.4</alibaba.ai.version>
+        <mcp.version>0.12.1</mcp.version>
+        <langchain4j.version>1.6.0</langchain4j.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>21</java.version>
+        <maven.compiler.plugin.version>3.11.0</maven.compiler.plugin.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
@@ -35,7 +38,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.32</version>
+            <version>1.18.36</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -43,7 +46,7 @@
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
-            <!-- spring boot工程的依赖库,无需继承spring-boot-starter-parent -->
+            <!-- spring boot -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -51,7 +54,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring cloud工程的依赖库 -->
+            <!-- spring cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -121,4 +124,44 @@
         </repository>
     </repositories>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.reporting.outputEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <generateReleasePoms>false</generateReleasePoms>
+                    <arguments>-DskipTests</arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>deploy-release</id>
+            <name>Nexus Release Repository</name>
+            <layout>default</layout>
+            <url>https://core.luopc.com/nexus/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deploy-snapshot</id>
+            <name>Nexus Snapshot Repository</name>
+            <layout>default</layout>
+            <url>https://core.luopc.com/nexus/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

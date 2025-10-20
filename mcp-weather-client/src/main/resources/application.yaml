@@ -19,7 +19,7 @@ spring:
       request-timeout: 120s
   ai:
     openai:
-      api-key: ${ai.token}
+      api-key: ${deepseek-token}
       base-url: https://api.deepseek.com
       chat:
         options:
