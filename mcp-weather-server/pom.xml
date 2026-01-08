@@ -67,16 +67,13 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <!-- 如果没有该配置，devtools不会生效 -->
-                    <!--                    <fork>true</fork>-->
-                    <!-- 指定该Main Class为全局的唯一入口 -->
                     <mainClass>com.luopc.platform.cloud.service.ai.WeatherServerApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
+                            <goal>repackage</goal>
                         </goals>
                     </execution>
                 </executions>

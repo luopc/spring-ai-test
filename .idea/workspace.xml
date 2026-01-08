@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a5c520-1ce9-4c4c-a72a-a7457b6ecf42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service/jwt/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service/jwt/handler/AuthenticationHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jwt-token-demo/src/test/java/com/luopc/platform/cloud/service/jwt/JwtBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-prd.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/config/application-uat.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="25a5c520-1ce9-4c4c-a72a-a7457b6ecf42" name="Changes" comment="[2025.10.20] update spring boot version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-weather-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-weather-client/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-client/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-client/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mcp-weather-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/resource/McpServiceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/java/com/luopc/platform/cloud/service/ai/resource/McpServiceResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-weather-server/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.WeatherClientApplication-dev.executor": "Run",
     "Spring Boot.WeatherClientApplication.executor": "Run",
@@ -72,16 +59,16 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "D:/workspace/java/AI/spring-ai-test/jwt-token-demo/src/main/java/com/luopc/platform/cloud/service",
-    "last_opened_file_path": "D:/workspace/java/AI/spring-ai-test/mcp-weather-server/src/main/resources",
+    "last_opened_file_path": "D:/workspace/java/AI/spring-ai-test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.32873562",
-    "settings.editor.selected.configurable": "terminal",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -158,6 +145,8 @@
     </configuration>
     <configuration name="WeatherClientApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <envs>
         <env name="ai.token" value="sk-fbe29af0a85f4e6eb6be1fc4d87bdc60" />
       </envs>
@@ -169,6 +158,8 @@
     </configuration>
     <configuration name="WeatherServerApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="mcp-weather-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.luopc.platform.cloud.service.ai.WeatherServerApplication" />
       <method v="2">
@@ -195,8 +186,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
       </set>
     </attachedChunks>
   </component>
@@ -229,11 +220,35 @@
       <workItem from="1756567758766" duration="628000" />
       <workItem from="1757602877174" duration="2326000" />
       <workItem from="1760170591163" duration="449000" />
-      <workItem from="1760972626629" duration="923000" />
+      <workItem from="1760972626629" duration="1229000" />
+      <workItem from="1761053701265" duration="601000" />
+      <workItem from="1761491384275" duration="593000" />
+      <workItem from="1761494745545" duration="109000" />
+      <workItem from="1764854750560" duration="6998000" />
+      <workItem from="1764923526821" duration="597000" />
+      <workItem from="1764926905214" duration="7341000" />
+      <workItem from="1767867568784" duration="1330000" />
     </task>
+    <task id="LOCAL-00001" summary="[2025.10.20] update spring boot version">
+      <option name="closed" value="true" />
+      <created>1760973849655</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760973849655</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[2025.10.20] update spring boot version" />
+    <option name="LAST_COMMIT_MESSAGE" value="[2025.10.20] update spring boot version" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

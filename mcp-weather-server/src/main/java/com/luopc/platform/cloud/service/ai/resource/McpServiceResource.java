@@ -16,7 +16,7 @@ public class McpServiceResource {
     @Resource
     private WeatherService weatherService;
 
-    @Tool(description = "根据省份+城市名称获取天气预报")
+    @Tool(name = "getWeatherByCity" , description = "根据省份+城市名称获取天气预报")
     public String getWeatherByCity(String province, String city) {
         WeatherResponse weather = weatherService.getWeather(province, city);
         return Objects.nonNull(weather) ? weather.toString() : "抱歉：未查询到对应城市！";

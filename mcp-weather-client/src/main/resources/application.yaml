@@ -6,6 +6,8 @@ server:
 #    context-path: '/tools'
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
   output:
     ansi:
       enabled: ALWAYS
