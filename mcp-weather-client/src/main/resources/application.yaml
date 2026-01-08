@@ -35,4 +35,4 @@ spring:
         sse:
           connections:
             mcp-server:
-              url: http://localhost:8010
+              url: http://localhost:8310

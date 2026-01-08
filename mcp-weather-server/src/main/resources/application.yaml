@@ -6,10 +6,12 @@ server:
 
 spring:
   application:
-    name: mcp-server
+    name: mcp-sse-server
   ai:
     mcp:
       server:
+        annotation-scanner:
+          enabled: true
         type: ASYNC
         sse-message-endpoint: /mcp/messages
         enabled: true

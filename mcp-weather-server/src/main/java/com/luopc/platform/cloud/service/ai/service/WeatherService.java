@@ -22,7 +22,6 @@ public class WeatherService {
     private static final String API_URL = "https://cn.apihz.cn/api/tianqi/tqyb.php";
     private final OkHttpClient client = new OkHttpClient();
 
-
     public WeatherResponse getWeather(String province, String city) {
         log.info("Province: {}, City: {}", province, city);
         // 构建请求URL（注意URL编码）
