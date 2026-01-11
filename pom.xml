@@ -11,7 +11,7 @@
     <modules>
         <module>mcp-weather-server</module>
         <module>mcp-weather-client</module>
-        <module>langchain4j-demo</module>
+        <module>langchain4j-open-ai-01</module>
         <module>common</module>
         <module>jwt-token-demo</module>
     </modules>
@@ -26,7 +26,7 @@
         <spring.ai.version>1.1.2</spring.ai.version>
         <alibaba.ai.version>1.0.0.4</alibaba.ai.version>
         <mcp.version>0.17.0</mcp.version>
-        <langchain4j.version>1.8.0</langchain4j.version>
+        <langchain4j.version>1.10.0</langchain4j.version>
 
         <!--Base-->
         <lombok.version>1.18.42</lombok.version>
